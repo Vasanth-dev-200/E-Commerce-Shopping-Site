@@ -4,8 +4,18 @@ import "react-multi-carousel/lib/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark as far } from "@fortawesome/free-regular-svg-icons";
 import { faBookmark as fas } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 
 const Sections = ({ categoryNames }) => {
+  const [bookmarkedItems, setBookmarkedItems] = useState([]);
+
+  useEffect(() => {
+    const cartData = getcartData();
+    if (cartData) {
+      setBookmarkedItems(cartData);
+    }
+  }, []);
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1200 },
@@ -46,7 +56,7 @@ const Sections = ({ categoryNames }) => {
     }
 
     localStorage.setItem("cartData", JSON.stringify(cartData));
-    console.log(cartData);
+    setBookmarkedItems(cartData);
   };
 
   return (
@@ -63,12 +73,17 @@ const Sections = ({ categoryNames }) => {
                 className="carousel-div"
                 responsive={responsive}
                 infinite={true}
-                // autoPlay={true}
-                // autoPlaySpeed={5000}
+                autoPlay={true}
+                autoPlaySpeed={5000}
                 removeArrowOnDeviceType={["mobile"]}
               >
                 {item.products.map((product) => {
-                  const isBookmarked = false;
+                  const isBookmarked = bookmarkedItems.some(
+                    (bookmarkedItem) =>
+                      bookmarkedItem.id === item.id &&
+                      bookmarkedItem.productId === product.id
+                  );
+
                   return (
                     <div className="card" key={product.id}>
                       <img src={product.url} alt="" />
