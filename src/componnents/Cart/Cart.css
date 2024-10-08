@@ -1,0 +1,9 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15%;
+    margin-top: 3%;
+    width: 70%;
+    height: 200px;
+    border: 1px solid black;
+}
