@@ -59,6 +59,11 @@ const Sections = ({ categoryNames }) => {
     setBookmarkedItems(cartData);
   };
 
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  
+
   return (
     <>
       {categoryNames.map((item) => {
@@ -66,7 +71,7 @@ const Sections = ({ categoryNames }) => {
           <div key={item.id}>
             <div className="pdt-container">
               <div className={item.name}>
-                <h1>{item.name}</h1>
+                <h1>{capitalizeFirstLetter(item.name)}</h1>
                 <p>{item.description}</p>
               </div>
               <Carousel
@@ -86,7 +91,7 @@ const Sections = ({ categoryNames }) => {
 
                   return (
                     <div className="card" key={product.id}>
-                      <img src={product.url} alt="" />
+                      <img src={product.url} alt={product.productName} draggable="false" />
                       <div className="card-body">
                         <div className="name-price">
                           <h2>{product.productName}</h2>
