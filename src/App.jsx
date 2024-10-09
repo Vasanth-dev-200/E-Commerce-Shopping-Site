@@ -9,7 +9,7 @@ function App() {
       id: 0,
       name: "women",
       description:
-        "Details to details is what makes Hexashop different from the other themes.",
+        "Elevate your style with our exclusive collection for women. From casual wear to elegant dresses, we offer everything you need to look and feel your best. Explore trendy outfits, timeless classics, and statement accessories to complement your unique style.",
       products: [
         {
           id: "0-0",
@@ -44,7 +44,7 @@ function App() {
       id: 1,
       name: "men",
       description:
-        "Details to details is what makes Hexashop different from the other themes.",
+        "Upgrade your wardrobe with our versatile men's collection. Whether it's sharp formal wear, comfortable casuals, or stylish activewear, we provide quality apparel for every occasion. Discover sleek designs and accessories that redefine modern fashion.",
       products: [
         {
           id: "1-0",
@@ -79,7 +79,7 @@ function App() {
       id: 2,
       name: "kids",
       description:
-        "Details to details is what makes Hexashop different from the other themes.",
+        "Make every day a fun adventure with our adorable and comfortable kids' clothing. We offer a playful mix of colorful outfits and durable wear for boys and girls, perfect for all their activities. Shop trendy looks that both kids and parents will love!",
       products: [
         {
           id: "2-0",
@@ -114,7 +114,7 @@ function App() {
       id: 4,
       name: "accessories",
       description:
-        "Details to details is what makes Hexashop different from the other themes.",
+        "Complete your look with our wide range of accessories. From bags and shoes to jewelry and sunglasses, find the perfect pieces to add that finishing touch to any outfit. Elevate your style with must-have accessories that blend fashion with function.",
       products: [
         {
           id: "3-0",
@@ -163,20 +163,3 @@ function App() {
 }
 
 export default App;
-
-// [
-//   {
-//       "id": "0-2",
-//       "productName": "Spring Collection",
-//       "price": "$100.00",
-//       "rating": "★★★★★",
-//       "url": "https://img.freepik.com/free-photo/young-woman-beautiful-dress-using-phone-shopping-online_1303-17521.jpg?ga=GA1.1.314904209.1727422277&semt=ais_hybrid"
-//   },
-//   {
-//       "id": "0-0",
-//       "productName": "New Green Jacket",
-//       "price": "$100.00",
-//       "rating": "★★★★",
-//       "url": "https://img.freepik.com/free-photo/studio-close-up-portrait-young-fresh-blonde-woman-brown-straw-poncho-wool-black-trendy-hat-round-glasses-looking-camera-green-leather-had-bag_273443-1121.jpg?ga=GA1.1.314904209.1727422277&semt=ais_hybrid"
-//   }
-// ]

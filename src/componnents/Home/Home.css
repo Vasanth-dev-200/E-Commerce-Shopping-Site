@@ -1,209 +1,213 @@
 .grid-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row: 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  gap: 20px;
 }
 
-
 .cts img {
-    width: 100%;
+  width: 100%;
 }
 
 .ct-common {
-    position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .ct-common-txt {
-    color: white;
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    right: 5%;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 5%;
 }
 
 .women,
 .men,
 .kids,
 .accessories {
-    position: relative;
+  position: relative;
 }
 
 .ct-sections {
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    right: 5%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  right: 5%;
 }
 
 .ct-sections p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .ct-sections h1 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .ct-common-txt h1 {
-    font-size: 50px;
-    margin: 0;
+  font-size: 50px;
+  margin: 0;
 }
 
 .hover-ct {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
-    height: 80%;
-    z-index: 1;
-    color: transparent;
-    transition: 0.4s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  z-index: 1;
+  color: transparent;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hover-ct h1,
+.hover-ct p,
+.hover-ct a {
+    margin: 0;
 }
 
 .hover-ct button {
-    color: transparent;
-    background-color: transparent;
-    border: transparent;
+  color: transparent;
+  background-color: transparent;
+  border: transparent;
 }
 
 .hover-ct:hover {
-    background-color: rgba(0, 0, 0, 0.818);
-    color: white;
-    transition: 0.4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.818);
+  color: white;
+  transition: 0.4s ease-in-out;
 
-    &.hover-ct button {
-        width: 120px;
-        height: 30px;
-        color: white;
-        background-color: transparent;
-        border: 1px solid white;
-        transition: 0.3s ease-in-out;
-    }
-
-    &.hover-ct button:hover {
-        color: rgb(0, 0, 0);
-        background-color: white;
-        transition: 0.3s ease-in-out;
-    }
-}
-
-.ct-common-txt p,
-.ct-sections p {
-    font-size: 20px;
-    font-style: italic;
-}
-
-.ct-common-txt button {
-    width: 150px;
-    height: 50px;
+  &.hover-ct button {
+    width: 120px;
+    height: 30px;
     color: white;
     background-color: transparent;
     border: 1px solid white;
     transition: 0.3s ease-in-out;
-}
+  }
 
-.ct-common-txt button:hover {
+  &.hover-ct button:hover {
     color: rgb(0, 0, 0);
     background-color: white;
     transition: 0.3s ease-in-out;
+  }
+}
+
+.ct-common-txt p,
+.ct-sections p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.ct-common-txt button {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: 0.3s ease-in-out;
+}
+
+.ct-common-txt button:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  transition: 0.3s ease-in-out;
 }
 
 .home-section {
-    padding: 35px;
+  padding: 35px;
 }
 
 @media only screen and (max-width: 950px) {
-    .grid-div {
-        display: block;
-    }
+  .grid-div {
+    display: block;
+  }
 
-    .cts img {
-        padding: 10px 0;
-    }
+  .cts img {
+    padding: 10px 0;
+  }
 
-    .ct-common-txt {
-        top: 35%;
-        left: 10%;
-    }
+  .ct-common-txt {
+    top: 35%;
+    left: 10%;
+  }
 
-    .ct-common-txt h1 {
-        font-size: 60px;
-        margin: 0;
-    }
+  .ct-common-txt h1 {
+    font-size: 60px;
+    margin: 0;
+  }
 
-    .ct-common-txt button {
-        width: 120px;
-        height: 40px;
-    }
+  .ct-common-txt button {
+    width: 120px;
+    height: 40px;
+  }
 
-    .ct-sections {
-        top: 35%;
-        left: 10%;
-    }
+  .ct-sections {
+    top: 35%;
+    left: 10%;
+  }
 
-    .ct-sections h1 {
-        font-size: 60px;
-    }
+  .ct-sections h1 {
+    font-size: 60px;
+  }
 
-    .hover-ct h1 {
-        font-size: 600%;
-        padding-top: 30%;
-    }
-
-
+  .hover-ct h1 {
+    font-size: 600%;
+    padding-top: 30%;
+  }
 }
 
-
 @media only screen and (max-width: 600px) {
-    .ct-common-txt {
-        top: 40%;
-        left: 2%;
-        right: 2%;
-        text-align: center;
-    }
+  .ct-common-txt {
+    top: 40%;
+    left: 2%;
+    right: 2%;
+    text-align: center;
+  }
 
-    .ct-common-txt h1 {
-        font-size: 25px;
-        margin: 0;
-    }
+  .ct-common-txt h1 {
+    font-size: 25px;
+    margin: 0;
+  }
 
-    .ct-common-txt p {
-        font-size: 10px;
-    }
+  .ct-common-txt p {
+    font-size: 10px;
+  }
 
-    .ct-common-txt button {
-        font-size: 9px;
-        width: 90px;
-        height: 35px;
-    }
+  .ct-common-txt button {
+    font-size: 9px;
+    width: 90px;
+    height: 35px;
+  }
 
-    .ct-sections {
-        top: 40%;
-        left: 2%;
-        right: 2%;
-    }
+  .ct-sections {
+    top: 40%;
+    left: 2%;
+    right: 2%;
+  }
 
-    .ct-sections h1 {
-        font-size: 25px;
-    }
+  .ct-sections h1 {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .hover-ct h1 {
-        font-size: 200%;
-        padding-top: 10%;
-        padding-bottom: 0;
-    }
+  .hover-ct h1 {
+    font-size: 200%;
+    padding-bottom: 0;
+  }
 
-    .hover-ct p {
-        display: none;
-    }
+  .hover-ct p {
+    display: none;
+  }
 }

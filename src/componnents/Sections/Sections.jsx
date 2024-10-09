@@ -68,7 +68,7 @@ const Sections = ({ categoryNames }) => {
     <>
       {categoryNames.map((item) => {
         return (
-          <div key={item.id}>
+          <div key={item.id} id={item.name}>
             <div className="pdt-container">
               <div className={item.name}>
                 <h1>{capitalizeFirstLetter(item.name)}</h1>
