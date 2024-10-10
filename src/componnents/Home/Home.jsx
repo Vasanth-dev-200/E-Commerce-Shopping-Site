@@ -33,12 +33,9 @@ const Home = ({ categoryNames }) => {
                   </div>
                   <div className="hover-ct">
                     <h1>{item.name.toUpperCase()}</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, conservisii ctetur adipiscing
-                      elit incid.
-                    </p>
+                    <p>{item.shortDescription}</p>
                     <a href={`#${item.name}`}>
-                      <button>Purchase now!</button>
+                      <button className="purchase-btn">Purchase now!</button>
                     </a>
                   </div>
                 </div>

@@ -8,8 +8,9 @@ function App() {
     {
       id: 0,
       name: "women",
+      shortDescription: "Trendy and stylish clothing for every occasion.",
       description:
-        "Elevate your style with our exclusive collection for women. From casual wear to elegant dresses, we offer everything you need to look and feel your best. Explore trendy outfits, timeless classics, and statement accessories to complement your unique style.",
+        "Elevate your style with trendy outfits, timeless dresses, and statement accessories.",
       products: [
         {
           id: "0-0",
@@ -43,8 +44,9 @@ function App() {
     {
       id: 1,
       name: "men",
+      shortDescription: "Fashion-forward men's wear, from casual to formal.",
       description:
-        "Upgrade your wardrobe with our versatile men's collection. Whether it's sharp formal wear, comfortable casuals, or stylish activewear, we provide quality apparel for every occasion. Discover sleek designs and accessories that redefine modern fashion.",
+        "Versatile men’s wear, from formal to casual, with sleek designs and stylish accessories.",
       products: [
         {
           id: "1-0",
@@ -78,8 +80,9 @@ function App() {
     {
       id: 2,
       name: "kids",
+      shortDescription: "Vibrant, fun, and comfy outfits for kids.",
       description:
-        "Make every day a fun adventure with our adorable and comfortable kids' clothing. We offer a playful mix of colorful outfits and durable wear for boys and girls, perfect for all their activities. Shop trendy looks that both kids and parents will love!",
+        "Fun, durable kids' clothing for all activities, loved by both kids and parents.",
       products: [
         {
           id: "2-0",
@@ -113,8 +116,9 @@ function App() {
     {
       id: 4,
       name: "accessories",
+      shortDescription: "Chic accessories to complete your perfect look.",
       description:
-        "Complete your look with our wide range of accessories. From bags and shoes to jewelry and sunglasses, find the perfect pieces to add that finishing touch to any outfit. Elevate your style with must-have accessories that blend fashion with function.",
+        "Find must-have accessories to complete any outfit with style and function.",
       products: [
         {
           id: "3-0",

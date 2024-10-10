@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
-
 const Cart = ({ categoryNames }) => {
   const [cartData, setCartData] = useState([]);
 
@@ -54,56 +53,60 @@ const Cart = ({ categoryNames }) => {
     const newCartData = cartData.filter((item) => {
       return item.id !== id;
     });
-    
+
     localStorage.setItem("cartData", JSON.stringify(newData));
     setCartData(newCartData);
   };
 
   return (
     <>
-      <Navbar />
-      <div className="cart-container">
-        {cartData.length === 0 ? (
-          <p>Your cart is empty!</p>
-        ) : (
-          cartData.map((product, index) => {
-            return (
-              <div className="cart" key={product.key || index}>
-                <img
-                  src={product.url}
-                  alt={product.productName}
-                  draggable="false"
-                />
-                <div className="cart-flex">
-                  <h2>Product : {product.productName}</h2>
-                  <p>Rating : {product.rating}</p>
-                  <p>Price : {product.price}</p>
-                  <Link
-                    to={product.productUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="buy-button" role="button">
-                      Buy Now
-                    </button>
-                  </Link>
-                </div>
-                <div className="icon-div">
-                  <FontAwesomeIcon
-                    icon={faTrashCan}
-                    size="2xl"
-                    className="delete-icon"
-                    onClick={() => {
-                      handleOnclick(product.id);
-                    }}
-                  />
-                </div>
-              </div>
-            );
-          })
-        )}
+      <div className="flex-foot">
+        <div>
+          <Navbar />
+          <div className="cart-container">
+            {cartData.length === 0 ? (
+              <p className="cart-price">Your cart is empty!</p>
+            ) : (
+              cartData.map((product, index) => {
+                return (
+                  <div className="cart" key={product.key || index}>
+                    <img
+                      src={product.url}
+                      alt={product.productName}
+                      draggable="false"
+                    />
+                    <div className="cart-flex">
+                      <h2>{product.productName}</h2>
+                      <p className="cart-rating">{product.rating}</p>
+                      <p className="cart-price">{product.price}</p>
+                      <Link
+                        to={product.productUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button className="buy-button" role="button">
+                          Buy Now
+                        </button>
+                      </Link>
+                    </div>
+                    <div className="icon-div">
+                      <FontAwesomeIcon
+                        icon={faTrashCan}
+                        size="2xl"
+                        className="delete-icon"
+                        onClick={() => {
+                          handleOnclick(product.id);
+                        }}
+                      />
+                    </div>
+                  </div>
+                );
+              })
+            )}
+          </div>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };

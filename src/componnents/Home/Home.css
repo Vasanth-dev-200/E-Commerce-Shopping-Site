@@ -45,11 +45,17 @@
   margin-top: 0;
 }
 
+.ct-common-txt button {
+  font-family: "Montserrat", sans-serif;
+}
+
 .ct-sections h1 {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 0;
 }
 
 .ct-common-txt h1 {
+  font-family: "Poppins", sans-serif;
   font-size: 50px;
   margin: 0;
 }
@@ -73,10 +79,23 @@
 .hover-ct h1,
 .hover-ct p,
 .hover-ct a {
-    margin: 0;
+  margin: 0;
+}
+
+.hover-ct h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.hover-ct p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.purchase-btn {
+  font-family: "Montserrat", sans-serif;
 }
 
 .hover-ct button {
+  font-family: "Montserrat", sans-serif;
   color: transparent;
   background-color: transparent;
   border: transparent;
@@ -105,7 +124,8 @@
 
 .ct-common-txt p,
 .ct-sections p {
-  font-size: 20px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
 }
 

@@ -71,8 +71,8 @@ const Sections = ({ categoryNames }) => {
           <div key={item.id} id={item.name}>
             <div className="pdt-container">
               <div className={item.name}>
-                <h1>{capitalizeFirstLetter(item.name)}</h1>
-                <p>{item.description}</p>
+                <h1 className="pdt-heading">{capitalizeFirstLetter(item.name)}</h1>
+                <p className="pdt-p">{item.description}</p>
               </div>
               <Carousel
                 className="carousel-div"
@@ -94,11 +94,11 @@ const Sections = ({ categoryNames }) => {
                       <img src={product.url} alt={product.productName} draggable="false" />
                       <div className="card-body">
                         <div className="name-price">
-                          <h2>{product.productName}</h2>
-                          <p>{product.rating}</p>
+                          <h2 className="product-name">{product.productName}</h2>
+                          <p className="rating-p">{product.rating}</p>
                         </div>
                         <div className="name-price">
-                          <p>{product.price}</p>
+                          <p className="price-p">{product.price}</p>
                           <FontAwesomeIcon
                             icon={isBookmarked ? fas : far}
                             onClick={() => handleClick(item.id, product.id)}
